@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "name": "Naman Omar",
+    "tagline": "AI / ML Engineer",
+    "roles": ["NLP Engineer", "LLM Researcher", "MLOps Engineer", "AI Engineer"],
+    "summary": "AI/ML engineer specialising in Natural Language Processing, Large Language Models, and multilingual modelling. Experienced in model fine-tuning, low-latency inference optimisation, domain-specific embeddings, distributed system design, and MLOps-driven real-time AI deployment.",
+    "email": "omarnaman33@gmail.com",
+    "phone": "+91-9305917340",
+    "github": "https://github.com/namanomar",
+    "linkedin": "https://www.linkedin.com/in/naman-omar-05660726b/",
+    "scholar": "https://scholar.google.com/citations?view_op=list_works&hl=en&user=q4_yO2MAAAAJ",
+    "location": "India"
+  },
+  "education": [
+    {
+      "institution": "IIIT Kottayam, Kerala",
+      "degree": "B.Tech in Computer Science",
+      "specialization": "AI and Data Science (Honors)",
+      "cgpa": "9.38",
+      "period": "2022 – 2026"
+    }
+  ],
+  "experience": [
+    {
+      "company": "DevRev",
+      "role": "Member of Technical Staff Intern – Applied AI",
+      "location": "Bengaluru, India · On-site",
+      "period": "Apr 2026 – Present",
+      "current": true,
+      "points": [
+        "Optimised and evaluated enterprise LLM prompt pipelines and agentic workflows, improving response accuracy, task completion rates, and execution efficiency across production AI systems.",
+        "Developed workflow orchestration and AI security pipelines including guardrails, prompt validation, and policy enforcement mechanisms, enabling scalable and secure deployment of high-throughput Applied AI applications."
+      ]
+    },
+    {
+      "company": "TIFIN",
+      "role": "AI/ML Engineer Intern",
+      "location": "Bengaluru, India · Hybrid",
+      "period": "Jul 2025 – Apr 2026",
+      "current": false,
+      "points": [
+        "Contributed to the Magnifi product team — LLM fine-tuning, quantization, and automating end-to-end model deployment and optimization pipelines for scalable production use.",
+        "Published and co-authored the research paper 'EventTempEx' focusing on advancing temporal understanding in NLP systems.",
+        "Collaborated with the Workifi Data Science team to enhance response generation performance and optimised a suggestion and recommendation engine for more accurate, personalised results.",
+        "Built and deployed agentic architectures in production, exploring prompt optimization, hallucination mitigation, and Bayesian perspectives of LLMs.",
+        "Contributed to the RM Data Science team — evaluation systems, fintech embedding architectures, and pipeline efficiency improvements."
+      ]
+    },
+    {
+      "company": "Zynn.ai",
+      "role": "Founding AI Engineer Intern",
+      "location": "Remote",
+      "period": "May 2025 – Jun 2025",
+      "current": false,
+      "points": [
+        "Developed and optimised an LLM pipeline that converts user-generated content (UGC) into real-time SKU predictions, improving product-matching accuracy and reducing inference latency.",
+        "Implemented a multimodal (text + image/video) retrieval architecture using embedding models, enabling instant mapping of influencer content to live products and increasing conversion potential."
+      ]
+    },
+    {
+      "company": "Bridge Connectivity Solutions",
+      "role": "Research Intern",
+      "location": "Remote",
+      "period": "May 2024 – Jul 2024",
+      "current": false,
+      "points": [
+        "Engineered software prototypes and conducted research in Sign Language Processing — training, fine-tuning, and deploying deep learning models.",
+        "Built deep learning models for sign language processing achieving 90% accuracy in gesture recognition."
+      ]
+    },
+    {
+      "company": "Bridge Connectivity Solutions",
+      "role": "Software Developer Intern",
+      "location": "Kottayam, Kerala, India",
+      "period": "Mar 2024 – Apr 2024",
+      "current": false,
+      "points": [
+        "Architected and deployed a web application using the React framework to demonstrate the workflow of the software prototype."
+      ]
+    },
+    {
+      "company": "Lanoviz",
+      "role": "Software Engineer Intern",
+      "location": "Remote",
+      "period": "Oct 2023 – Dec 2023",
+      "current": false,
+      "points": [
+        "Led the development of a responsive inventory management system — website and mobile application for iOS and Android using React and Flutter.",
+        "Optimised and deployed the application on Point of Sale (POS) systems."
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "EventTempEx: Event-Anchored Temporal Expression Detection",
+      "venue": "FIRE 2025 (ACM)",
+      "status": "Accepted",
+      "url": "#",
+      "highlights": [
+        "Proposed an event-anchored temporal expression detection and normalisation framework achieving up to 99.7% accuracy across complex temporal categories through transformer-based modelling.",
+        "Constructed a curated dataset of 5,052 verified sentences with 4 semantic temporal labels; evaluated Gliner-RoBERTa and DeBERTa-v3."
+      ]
+    },
+    {
+      "title": "Beyond SIR and Prophet: Leveraging Temporal Graph Networks for Epidemic Prediction",
+      "venue": "MAiTRI 2025",
+      "status": "Accepted",
+      "url": "#",
+      "highlights": [
+        "Developed a dynamic graph-based framework using Temporal Graph Networks (TGN) to model infectious disease spread under evolving social interactions, addressing limitations of static compartmental models (SIR/SEIR) and traditional time-series forecasting.",
+        "Achieved superior predictive performance on India's COVID-19 case data, with TGN consistently outperforming Prophet and compartmental baselines across MAE, MAPE, and RMSE metrics using rolling time-series cross-validation."
+      ]
+    },
+    {
+      "title": "LLMs for Efficient Surrogate Model Selection – Using LLMs to Accelerate Expensive Optimisation Tasks",
+      "venue": "ICCCNT 2025",
+      "status": "Accepted",
+      "url": "#",
+      "highlights": [
+        "Proposed a novel LLM-based framework for surrogate model selection in high-dimensional optimisation, integrating Large Language Models with Surrogate-Assisted Particle Swarm Optimisation (PSO) to automate surrogate selection based on function characteristics.",
+        "Improved optimisation efficiency and reduced computational costs, outperforming baseline approaches and advancing automation in algorithmic decision-making for scalable optimisation problems."
+      ]
+    },
+    {
+      "title": "ProactiveGuard: IoT-Driven Fall Detection and RAG-Based Caregiver Assistance for Alzheimer's Patients",
+      "venue": "SPCOM 2026",
+      "status": "Accepted",
+      "url": "#",
+      "highlights": [
+        "Presented a wearable IoT system using continuous nine-axis inertial sensing, LoRaWAN transmission, and cloud-hosted inference for real-time fall detection. Evaluated LSTM, GRU, 1D-CNN, and Transformer architectures on the KFall dataset (189,987 windows) — stateless LSTM achieved F1-score 0.8893 with zero missed falls; 1D-CNN recorded best precision at 0.9507.",
+        "Integrated a RAG module backed by Pinecone vector store and BART-Large to enable caregivers to query patient history and clinical guidance through natural language, with all sensor payloads protected via AES-256 encryption."
+      ]
+    },
+    {
+      "title": "Federated Learning for Multi-Support Itemset Mining with Logarithmic Tilted Windows",
+      "venue": "IEEE TRANSACTION PAPER",
+      "status": "Under Review",
+      "url": "#",
+      "highlights": [
+        "Proposes a federated learning framework for multi-support itemset mining using logarithmic tilted windows, enabling privacy-preserving distributed pattern discovery across heterogeneous data sources."
+      ]
+    },
+    {
+      "title": "TopicSelectNet: A Hybrid Approach to Abstractive Summarisation Using Dynamic Content Selection",
+      "venue": "ICMLDE 2025",
+      "status": "Accepted",
+      "url": "#",
+      "highlights": [
+        "Introduced a neural pipeline integrating BERTopic-based topic modelling with a hybrid content selection mechanism (topic relevance + global sentence importance + diversity) feeding into a BART-based abstractive summariser for legal documents.",
+        "Evaluated on the IN-Abs dataset (7,130 legal judgments), achieving relative gains of up to 85% in semantic similarity over strong abstractive baselines — demonstrating the value of topic-aware content selection for legal NLP."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "MedInsight",
+      "subtitle": "AI-Powered Medical Knowledge Assistant",
+      "description": "End-to-end RAG pipeline using FAISS and Sentence-Transformers, indexing 1,000+ medical document chunks with sub-second Top-K semantic retrieval. Integrated Qwen2.5:4B model with prompt-grounded response generation improving answer relevance by 30% and reducing hallucinations by 25%.",
+      "tech": ["RAG", "FAISS", "Sentence-Transformers", "Qwen2.5", "Python"],
+      "github": "https://github.com/namanomar/MedInsight",
+      "demo": null
+    },
+    {
+      "name": "Cerberus",
+      "subtitle": "Graph-Enhanced Real-Time Fraud Detection",
+      "description": "3-model weighted ensemble (LightGBM 60% / Graph Score 25% / Isolation Forest 15%) with isotonic calibration achieving ROC-AUC 0.921. Transaction fraud graph with NetworkX + Node2Vec. FastAPI at sub-20ms latency with Kafka streaming at 10 TPS.",
+      "tech": ["LightGBM", "NetworkX", "Node2Vec", "FastAPI", "Kafka", "MLOps"],
+      "github": "https://github.com/namanomar/Cerberus",
+      "demo": null
+    },
+    {
+      "name": "MedGraphRAG",
+      "subtitle": "Graph-Augmented Medical RAG",
+      "description": "Graph-enhanced Retrieval-Augmented Generation system for medical knowledge retrieval, combining knowledge graphs with vector search for improved clinical reasoning.",
+      "tech": ["Python", "Graph Neural Networks", "RAG", "NLP"],
+      "github": "https://github.com/namanomar/MedGraphRAG",
+      "demo": null
+    },
+    {
+      "name": "Awaaz",
+      "subtitle": "Voice Intelligence Platform",
+      "description": "Python-based voice and speech processing application with real-time capabilities deployed on Vercel.",
+      "tech": ["Python", "Speech Processing", "NLP"],
+      "github": "https://github.com/namanomar/Awaaz",
+      "demo": "https://awaaz-orpin.vercel.app"
+    },
+    {
+      "name": "Prism",
+      "subtitle": "IIIT Kottayam Institutional Portal",
+      "description": "Centralised web portal for IIIT Kottayam streamlining management of faculty, student records, placement activities, and club operations. Modular dashboards for different stakeholders with secure access to academic data, event tracking, and resource planning. Includes automated data backup and reporting for administrative efficiency.",
+      "tech": ["Web", "Dashboards", "Full-Stack"],
+      "github": null,
+      "demo": "https://prism.iiitkottayam.ac.in/",
+      "period": "Nov 2024 – May 2025"
+    },
+    {
+      "name": "RoomEase",
+      "subtitle": "Hotel Management Platform",
+      "description": "Modern, feature-rich hotel management platform designed to simplify the booking process and enhance customer experiences. Built with Next.js and Sanity, optimised for performance, scalability, and seamless navigation.",
+      "tech": ["Next.js", "Sanity", "TypeScript"],
+      "github": null,
+      "demo": "https://room-ease-one.vercel.app/",
+      "period": "Sep 2024 – Nov 2024"
+    }
+  ],
+  "skills": {
+    "Programming": ["Python", "C++", "C", "JavaScript"],
+    "ML & Deep Learning": ["PyTorch", "TensorFlow", "Scikit-learn", "PySpark", "CUDA"],
+    "NLP & LLMs": ["HuggingFace Transformers", "Sentence-Transformers", "LLM Evaluation", "RAG", "Fine-tuning"],
+    "Databases": ["MySQL", "PostgreSQL", "MongoDB", "Firebase"],
+    "Cloud & MLOps": ["Docker", "GCP", "Kubernetes", "Kafka", "MLflow", "Jenkins", "Git", "Linux"]
+  },
+  "achievements": [
+    "Third Prize at the International Hackathon conducted by IISc (Indian Institute of Science), Bengaluru.",
+    "First Prize at Apoorv — the Inter-College AI/ML Hackathon, IIIT Kottayam.",
+    "Worked on two MoU-based Government of Kerala–funded projects: Alzheimer's patient fall detection and Kathakali sign detection.",
+    "Published four conference papers; two additional journal papers currently under review.",
+    "AI and Data Science Lead at BetaLabs, IIIT Kottayam."
+  ]
+}
