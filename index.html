@@ -1,129 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Naman Omar — AI/ML Engineer</title>
-  <meta name="description" content="AI/ML Engineer specialising in NLP, LLMs, and distributed AI systems." />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Naman Omar — Notes</title>
+<style>
+  :root{color-scheme:light;--paper:#fffdf5;--ink:#26262a;--muted:#8a8672;--line:#e8e4d0;--margin:#e9a0a0;--bar:#efebd8;
+    --work:#2f5d9e;--workbg:#e3edfb;--build:#1f7a4d;--buildbg:#dff3e8;--paperc:#7a45b8;--paperbg:#eee3fa;--win:#b8741a;--winbg:#fdeccd}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bar);color:var(--ink);font:15px/1.65 "Courier New",ui-monospace,monospace}
+  .win{max-width:820px;margin:24px auto;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 6px 28px rgba(0,0,0,.08)}
+  .bar{display:flex;align-items:center;gap:6px;background:var(--bar);padding:9px 12px;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+  .dot{width:11px;height:11px;border-radius:50%}
+  .dot:nth-child(1){background:#f0a3a3}.dot:nth-child(2){background:#f1d28b}.dot:nth-child(3){background:#a7d9a0}
+  .bar .title{margin-left:8px}
+  nav{display:flex;gap:2px;padding:0 12px;background:var(--bar);border-bottom:1px solid var(--line)}
+  nav button{font:inherit;font-size:14px;background:none;border:0;padding:8px 16px;color:var(--muted);cursor:pointer;border-radius:6px 6px 0 0}
+  nav button.on{background:var(--paper);color:var(--ink);font-weight:bold}
+  .page{display:none;padding:28px 28px 44px 56px;position:relative;
+    background-image:repeating-linear-gradient(transparent,transparent 27px,var(--line) 28px);background-position:0 8px}
+  .page::before{content:"";position:absolute;left:40px;top:0;bottom:0;width:1px;background:var(--margin);opacity:.7}
+  .page.on{display:block}
+  h1{font-size:26px;margin:0;letter-spacing:-.01em}
+  .sub{color:var(--muted);margin:0 0 2px}
+  a{color:var(--work);text-decoration-thickness:1px;text-underline-offset:3px}
+  .stats{display:flex;flex-wrap:wrap;gap:8px 18px;margin:16px 0 30px;font-size:13px;color:var(--muted)}
+  .stats b{color:var(--ink);font-size:17px}
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  /* one continuous timeline */
+  .tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px dashed #cfc9ae}
+  .tl li{position:relative;margin:0 0 20px;padding-left:4px}
+  .tl li::before{content:"";position:absolute;left:-30px;top:6px;width:12px;height:12px;border-radius:50%;
+    background:var(--paper);border:3px solid var(--c,var(--ink))}
+  .tl li.now::before{background:var(--c);box-shadow:0 0 0 5px var(--cbg)}
+  .d{font-size:12.5px;color:var(--muted);letter-spacing:.02em}
+  .d .tag{display:inline-block;margin-left:8px;padding:0 8px;border-radius:99px;font-size:11px;font-weight:bold;
+    color:var(--c);background:var(--cbg);text-transform:uppercase;letter-spacing:.08em}
+  .t{display:block;margin-top:1px}
+  .t b{font-weight:bold}
+  .more{display:block;font-size:13.5px;color:#55534a}
+  .work{--c:var(--work);--cbg:var(--workbg)}
+  .build{--c:var(--build);--cbg:var(--buildbg)}
+  .paper{--c:var(--paperc);--cbg:var(--paperbg)}
+  .win2{--c:var(--win);--cbg:var(--winbg)}
 
-  <link rel="stylesheet" href="style.css" />
+  /* mail */
+  .mail{border:1px solid var(--line);background:var(--paper);border-radius:8px;margin-top:16px}
+  .mail label{display:flex;align-items:center;gap:10px;padding:6px 12px;border-bottom:1px solid var(--line);font-size:14px}
+  .mail label span{width:60px;color:var(--muted)}
+  .mail input,.mail textarea{flex:1;font:inherit;font-size:14px;color:var(--ink);background:none;border:0;outline:0;width:100%}
+  .mail textarea{display:block;padding:12px;min-height:180px;resize:vertical;line-height:1.6}
+  .mail .foot{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-top:1px solid var(--line)}
+  .send{font:inherit;font-size:14px;background:var(--ink);color:var(--paper);border:0;border-radius:6px;padding:6px 18px;cursor:pointer}
+  .when{font-size:13px;color:var(--muted)}
+  .links{margin-top:20px;font-size:14px}
+  @media(max-width:620px){.page{padding:20px 14px 32px 40px}.page::before{left:28px}.tl{padding-left:18px}}
+</style>
 </head>
 <body>
-
-  <!-- ─── Navigation ─────────────────────────────────── -->
-  <nav id="nav">
-    <div class="nav-logo">NO<span></span></div>
-    <ul class="nav-links">
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+<div class="win">
+  <div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="title">naman.txt</span></div>
+  <nav>
+    <button class="on" data-t="work">Work</button>
+    <button data-t="contact">Contact</button>
   </nav>
 
-  <main>
+  <section class="page on" id="work">
+    <h1>Naman Omar</h1>
+    <p class="sub">AI / ML Engineer — NLP, LLMs, MLOps · IIIT Kottayam</p>
+    <div class="stats">
+      <span><b>6</b> internships</span><span><b>3 yrs</b> in industry</span><span><b>6</b> papers</span>
+      <span><b>9.38</b> CGPA</span><span><b>2</b> hackathon wins</span><span><b>40+</b> repos</span>
+    </div>
+    <ul class="tl" id="tl"></ul>
+  </section>
 
-    <!-- ─── Hero ─────────────────────────────────────── -->
-    <section id="hero">
-      <p class="hero-eyebrow">Portfolio · 2026</p>
-      <h1 class="hero-name" id="hero-name"></h1>
-      <div class="hero-role">
-        <span class="role-text" id="role-text"></span>
-        <span class="cursor"></span>
-      </div>
-      <p class="hero-summary" id="hero-summary"></p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" id="btn-github" href="#" target="_blank" rel="noopener">
-          ↗ GitHub
-        </a>
-        <a class="btn btn-ghost" href="#contact">Get in Touch</a>
-        <a class="btn btn-ghost" href="https://scholar.google.com" target="_blank" rel="noopener">
-          Google Scholar
-        </a>
-      </div>
-      <div class="hero-stats" id="hero-stats"></div>
-    </section>
+  <section class="page" id="contact">
+    <h1>Say hi</h1>
+    <p class="sub">Open to research collaborations and AI engineering roles.</p>
+    <form class="mail" id="f">
+      <label><span>To</span><input value="omarnaman33@gmail.com" readonly></label>
+      <label><span>From</span><input id="from" type="email" placeholder="your email" required></label>
+      <label><span>Subject</span><input id="subj" placeholder="Hello Naman" required></label>
+      <textarea id="body" placeholder="Write your message…" required></textarea>
+      <div class="foot"><span class="when">opens your mail app</span><button class="send" type="submit">Send ➤</button></div>
+    </form>
+    <p class="links">
+      <a href="https://github.com/namanomar">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/naman-omar-05660726b/">LinkedIn</a> ·
+      <a href="https://scholar.google.com/citations?user=q4_yO2MAAAAJ">Scholar</a>
+    </p>
+  </section>
+</div>
 
-    <div class="divider"></div>
+<script>
+  // [date, type, title, detail, link, now?]
+  const G='https://github.com/namanomar/';
+  const items=[
+    ['Apr 2026 → now','work','DevRev — MTS Intern, Applied AI','Tuning enterprise LLM prompt pipelines and agent workflows; building guardrails and policy enforcement.',null,1],
+    ['★ prize','win2','3rd place, IISc International Hackathon','Bengaluru.',null],
+    ['★ prize','win2','1st place, Apoorv AI/ML Hackathon','Inter-college, IIIT Kottayam.',null],
+    ['Oct 2026','build','Stale','Flags every fact that went stale and everything built on it; stops agents acting on untrusted sources.',G+'Stale'],
+    ['Oct 2026','build','DCGR','Context-gated retrieval for RAG in messy, interrupted multi-user chat.',G+'DCGR'],
+    ['Sep 2026','build','Conductor','Agent workflow platform where every write action is independently re-checked.',G+'Conductor'],
+    ['Aug 2026','build','PREF-VALID','Measures one latent preference through four independent channels.',G+'PREF-VALID'],
+    ['Jul 2026','build','Clinical LLM Micro-Benchmark','Data audit and benchmark on outpatient chronic-care records.',G+'Clinical-LLM-Micro-Benchmark'],
+    ['SPCOM 2026','paper','ProactiveGuard','IoT fall detection for Alzheimer\'s patients + RAG caregiver assistant. F1 0.889, zero missed falls.',null],
+    ['Apr 2026','build','Awaaz','Voice intelligence platform.','https://awaaz-orpin.vercel.app'],
+    ['Mar 2026','build','Cerberus','Real-time fraud detection, ROC-AUC 0.921 at sub-20ms.',G+'Cerberus'],
+    ['Jul 2025 – Apr 2026','work','TIFIN — AI/ML Engineer Intern','LLM fine-tuning, quantization, deployment pipelines; agentic systems in production.',null],
+    ['Dec 2025','paper','EventTempEx · FIRE 2025','Event-anchored temporal expression detection, up to 99.7% accuracy.',null],
+    ['2025','paper','Surrogate model selection with LLMs · ICCCNT 2025','LLM picks the surrogate for expensive optimisation tasks.',null],
+    ['2025','paper','Temporal Graph Networks for epidemics · MAiTRI 2025','Beats Prophet and SIR baselines on India COVID data.',null],
+    ['2025','paper','TopicSelectNet · ICMLDE 2025','Topic-aware abstractive summarisation of legal judgments, up to +85% semantic similarity.',null],
+    ['Nov 2025','build','Real-Time Twitter Hybrid Semantic Analysis','',G+'Real-Time-Twitter-Hybrid-Semantic-Analysis'],
+    ['Oct 2025','build','Doctor Handwritten Prescription','Computer vision course project.',G+'Doctor_Handwritten_Prescription'],
+    ['May – Jun 2025','work','Zynn.ai — Founding AI Engineer Intern','Real-time SKU prediction from creator content; multimodal retrieval.',null],
+    ['May 2025','build','MedGraphRAG','Knowledge graphs + vector search for medical RAG.',G+'MedGraphRAG'],
+    ['Mar 2025','build','MedInsight','Medical RAG: +30% relevance, −25% hallucination.',G+'MedInsight'],
+    ['Mar 2025','build','MatchWise','Resume vs job-description match score with AI suggestions.',G+'MatchWise'],
+    ['Nov 2024 – May 2025','build','Prism','IIIT Kottayam portal for faculty, students, placements and clubs.','https://prism.iiitkottayam.ac.in/'],
+    ['Sep – Nov 2024','build','RoomEase','Hotel booking platform on Next.js + Sanity.','https://room-ease-one.vercel.app/'],
+    ['May – Jul 2024','work','Bridge Connectivity — Research Intern','Sign language models, 90% gesture accuracy.',null],
+    ['Mar – Apr 2024','work','Bridge Connectivity — Developer Intern','React app demoing the prototype.',null],
+    ['Oct – Dec 2023','work','Lanoviz — Software Engineer Intern','Inventory system on React + Flutter, deployed on POS.',null],
+    ['2022','win2','Started B.Tech at IIIT Kottayam','CSE, AI & Data Science Honors.',null]
+  ];
+  const names={work:'work',build:'built',paper:'paper',win2:'win'};
+  document.getElementById('tl').innerHTML=items.map(([d,k,t,m,l,now])=>
+    `<li class="${k}${now?' now':''}"><span class="d">[${d}] --->${'<span class="tag">'+names[k]+'</span>'}</span>`+
+    `<span class="t"><b>${l?`<a href="${l}">${t}</a>`:t}</b></span>`+(m?`<span class="more">${m}</span>`:'')+`</li>`).join('');
 
-    <!-- ─── Experience ───────────────────────────────── -->
-    <section id="experience">
-      <span class="section-label">02 — Work</span>
-      <h2 class="section-title">Experience</h2>
-      <div class="timeline" id="timeline"></div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- ─── Education ────────────────────────────────── -->
-    <section id="education">
-      <span class="section-label">03 — Academics</span>
-      <h2 class="section-title">Education</h2>
-      <div id="edu-container"></div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- ─── Projects ─────────────────────────────────── -->
-    <section id="projects">
-      <span class="section-label">04 — Work</span>
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid" id="projects-grid"></div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- ─── Publications ─────────────────────────────── -->
-    <section id="publications">
-      <span class="section-label">05 — Research</span>
-      <h2 class="section-title">Publications</h2>
-      <div class="pub-list" id="pub-list"></div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- ─── Skills ───────────────────────────────────── -->
-    <section id="skills">
-      <span class="section-label">06 — Stack</span>
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="skills-grid" id="skills-grid"></div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- ─── Achievements ─────────────────────────────── -->
-    <section id="achievements">
-      <span class="section-label">07 — Highlights</span>
-      <h2 class="section-title">Achievements</h2>
-      <div class="achievement-list" id="achievement-list"></div>
-    </section>
-
-    <!-- ─── Contact ──────────────────────────────────── -->
-    <section id="contact">
-      <div class="inner">
-        <div class="contact-grid">
-          <div>
-            <span class="section-label">08 — Contact</span>
-            <p class="contact-intro" id="contact-name"></p>
-            <p class="contact-sub">Open to research collaborations, AI engineering roles, and interesting problems.</p>
-          </div>
-          <div class="contact-links" id="contact-links"></div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>Naman Omar · 2026</p>
-  </footer>
-
-  <script src="script.js"></script>
+  const tabs=document.querySelectorAll('nav button'),pages=document.querySelectorAll('.page');
+  function show(t){tabs.forEach(b=>b.classList.toggle('on',b.dataset.t===t));pages.forEach(p=>p.classList.toggle('on',p.id===t));}
+  tabs.forEach(b=>b.onclick=()=>{show(b.dataset.t);location.hash=b.dataset.t});
+  if(location.hash==='#contact')show('contact');
+  document.getElementById('f').onsubmit=e=>{
+    e.preventDefault();
+    const body=document.getElementById('body').value+'\n\n— '+document.getElementById('from').value;
+    location.href='mailto:omarnaman33@gmail.com?subject='+encodeURIComponent(document.getElementById('subj').value)+'&body='+encodeURIComponent(body);
+  };
+</script>
 </body>
 </html>
